@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style-ch4.css" />
+
+    <!-- Game Play Page -->
+    <title>Game Traditional</title>
+  </head>
+  <body id="bodyPage">
+    <div class="gameTitle">
+      <a href="index.html" class="LogoBackButton">
+        <img src="assets/lebihkecil.png" alt="" />
+      </a>
+      <img src="assets/logo-1.png" alt="logoGamePlay" id="LogoGameSuit" />
+      <h1 id="GamePlayTitle">ROCK PAPER SCISSORS</h1>
+    </div>
+    <!-- Player 1 Section -->
+    <div id="mainPage">
+      <div class="matchGame">
+        <div class="Player1">
+          <h2 class="P1Title">PLAYER 1</h2>
+          <button
+            id="Player1Batu"
+            class="gameOptionP1"
+            onclick="pickOption('Player1Batu')"
+          >
+            <img src="assets/batu.png" alt="batu" class="optionP1" />
+          </button>
+          <button
+            id="Player1Kertas"
+            class="gameOptionP1"
+            onclick="pickOption('Player1Kertas')"
+          >
+            <img src="assets/kertas.png" alt="batu" class="optionP1" />
+          </button>
+          <button
+            id="Player1Gunting"
+            class="gameOptionP1"
+            onclick="pickOption('Player1Gunting')"
+          >
+            <img src="assets/gunting.png" alt="batu" class="optionP1" />
+          </button>
+        </div>
+        <!-- End Player 1 Section -->
+
+        <!-- Status Game -->
+        <div class="PlayStatus">
+          <h1 id="TextVersus">VS</h1>
+          <div id="P1Win">PLAYER 1 WIN</div>
+          <div id="ComWin">COM WIN</div>
+          <div id="Draw">DRAW</div>
+        </div>
+        <!-- End Status Game -->
+
+        <!-- Computer section -->
+        <div class="Computer">
+          <h2 class="ComTitle">COM</h2>
+          <button id="comBatu" class="gameOptionCom">
+            <img src="assets/batu.png" alt="batu" class="optionComputer" />
+          </button>
+          <button id="comKertas" class="gameOptionCom">
+            <img src="assets/kertas.png" alt="kertas" class="optionComputer" />
+          </button>
+          <button id="comGunting" class="gameOptionCom">
+            <img
+              src="assets/gunting.png"
+              alt="gunting"
+              class="optionComputer"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Computer Section -->
+
+    <!-- Refresh Button -->
+
+    <button class="BtnRefresh">
+      <img
+        src="assets/refresh.png"
+        alt="rfsh"
+        onclick="pickOption('R')"
+        class="refreshImg"
+      />
+    </button>
+    <!-- End Refresh Button -->
+  </body>
+
+  <!-- My Javascript -->
+  <script src="script-ch4.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    let dataUser = getCookie("user-data");
+    if (dataUser == null) {
+      alert("You Haven't logged in yet...");
+      window.location.href = "/login.html";
+    } else {
+      document.getElementById("playerName").innerHTML = JSON.parse(
+        getCookie("user-data")
+      ).user;
+    }
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == " ") c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+  </script>
+</html>

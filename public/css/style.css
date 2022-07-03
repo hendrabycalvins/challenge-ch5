@@ -1,0 +1,641 @@
+/* My Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+/* My Landing Page */
+html,
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*  Header and Navbar */
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: radial-gradient(
+      190% 60% at 50% 38%,
+      rgba(255, 181, 72, 0),
+      73.22%,
+      #000000 98%
+    ),
+    url(/public/assets/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  background: fixed;
+  width: 100%;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.logo-navbar {
+  width: 49px;
+  height: 49px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.navbar-nav {
+  align-items: center;
+  padding: 30px 10%;
+  word-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover,
+#logo:hover {
+  color: #ffffff !important;
+}
+
+.header-tittle-info {
+  width: 100%;
+  margin-top: 313.7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 60px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.header-info {
+  padding-top: 107.6px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 27.6px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-align: center;
+}
+.header-info-button {
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 22px;
+  width: 260.36px;
+  height: 60px;
+  margin-bottom: 36.68%;
+  font-family: "Open Sans", sans-serif;
+  font-style: bold;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700px;
+  font-family: "Bebas Neue", Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Bebas Neue", Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header-mini-info {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 5px;
+  line-height: 20px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+.header-info-button:hover {
+  background-color: #ba8e08;
+}
+
+.header-scroll-link-wrapper {
+  padding-bottom: 5%;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.header-scroll-link-wrapper:hover {
+  padding-bottom: 5%;
+  text-decoration: none;
+  color: #ba8e08;
+  font-size: 12px;
+}
+/* Media Querry */
+@media (max-width: 575px) and (max-width: 767px) {
+  .header-tittle-info {
+    font-size: 3.5rem;
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-tittle-info {
+    font-size: 3.3rem;
+    letter-spacing: 0rem;
+    padding-top: 9%;
+  }
+  .header-info {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    padding-top: 50%;
+  }
+}
+
+/*  end Header and Navbar  */
+
+/*  Gallery */
+
+.gallery {
+  min-height: 100vh;
+  background-image: radial-gradient(
+      190% 60% at 50% 38%,
+      rgba(255, 181, 72, 0),
+      #000000 98%
+    ),
+    url(/public/assets/the-games-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-content {
+  padding-top: 6%;
+  padding-bottom: -5%;
+  padding-left: 15%;
+  font-size: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  width: 90vw !important;
+  color: white;
+}
+
+.col h3 {
+  padding-top: 1rem;
+}
+
+.col h1 {
+  padding-bottom: 2em;
+}
+
+.gallery-mini-content {
+  font-size: 3rem;
+  margin-bottom: -9rem !important;
+  line-height: 60px;
+}
+
+.carousel-item {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  left: 4%;
+}
+
+/* Media Querry */
+
+@media (max-width: 565px) {
+  .gallery-content {
+    font-size: 1.5rem;
+    padding-top: 10%;
+    text-align: left;
+  }
+  .gallery-mini-content {
+    font-size: 3.2rem;
+    text-align: left;
+  }
+  .carousel-item {
+    padding-top: 30%;
+    padding-right: 4%;
+    padding-left: 6%;
+  }
+}
+
+/* end Gallery  */
+
+/*  Features */
+
+.features {
+  min-height: 100vh;
+  background-image: radial-gradient(
+      190% 60% at 50% 38%,
+      rgba(255, 181, 72, 0),
+      #000000 98%
+    ),
+    url(/public/assets/features.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.features-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.67px;
+  letter-spacing: 2px;
+  padding-top: 10%;
+  width: 90vw !important;
+  color: white;
+  padding-right: 28%;
+}
+
+.features-mini-content {
+  line-height: 60px;
+}
+
+.features-info-content {
+  color: white;
+  padding-top: 2rem;
+  padding-right: 7rem;
+}
+
+.tl-info-title {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 2px;
+  align-items: center;
+  color: #fbb341 !important;
+}
+
+/* Media Querry */
+
+@media (max-width: 575px) and (max-width: 768px) {
+  .features-content {
+    font-size: 1.4rem;
+  }
+  .features-mini-content {
+    font-size: 3rem;
+  }
+  .features-info-content {
+    font-size: 0.8rem;
+  }
+  .tl-info-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1030px) {
+  .line {
+    height: 6.2rem;
+    right: 43.5%;
+    transform: translateY(27%);
+  }
+}
+
+@media (min-width: 1031px) and (max-width: 1199px) {
+  .line {
+    height: 6.3rem;
+    right: 44%;
+    transform: translateY(27%);
+  }
+}
+
+@media (max-width: 769px) and (max-width: 991px) {
+  .features-content {
+    font-size: 1.8rem;
+  }
+  .features-mini-content {
+    font-size: 3.5rem;
+  }
+  .features-info-content {
+    font-size: 1rem;
+  }
+  .tl-info-title {
+    font-size: 1.2rem;
+  }
+  .line {
+    height: 6.8rem;
+    right: 48%;
+    transform: translateY(27%);
+  }
+}
+
+@media (max-width: 575px) and (min-width: 500px) {
+  .feature {
+    background-image: url(/public/assets/features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    box-shadow: inset 0 0 100px 20px black;
+  }
+}
+@media (max-width: 499px) {
+  .feature {
+    background-image: url(/public/assets/features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 4% 50%;
+    min-height: 100vh;
+    box-shadow: inset 0 0 100px 20px black;
+  }
+}
+
+/*  end Features  */
+
+/*  Specification  */
+
+.spec {
+  width: 100%;
+  min-height: 100vh;
+  background-image: radial-gradient(
+      30% 75% at 65% 40%,
+      rgba(0, 0, 52, 0) 0%,
+      rgba(10, 10, 10, 0.5) 50%,
+      #000 95%
+    ),
+    url(/public/assets/requirements.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8%;
+  text-align: center;
+}
+
+.spec-info-top h5 {
+  margin-top: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: -1.5rem;
+  line-height: 10%;
+  letter-spacing: 2px;
+}
+
+.spec-req {
+  font-weight: 400;
+  max-width: 30vw;
+  text-align: left;
+  font-size: 56px;
+  padding-top: 7%;
+  font-style: normal;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.table-content-req {
+  max-width: 32vw !important;
+}
+
+.table-req-info {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fbb341;
+  font-style: normal;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.table-req-content {
+  color: white;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+  line-height: 1rem;
+  text-align: left;
+}
+
+.table {
+  border: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+/* Media Querry */
+
+@media (max-width: 991px) {
+  .spec {
+    background-image: url(/public/assets/requirements.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 50%;
+    min-height: 100vh;
+    box-shadow: inset 250px 10px 100px 10px black;
+  }
+
+  .spec-info-top {
+    font-size: 1rem;
+  }
+
+  .spec-req {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .news-letter h2 {
+    font-size: 2rem;
+  }
+
+  .news-letter h1 {
+    font-size: 1.5rem;
+  }
+
+  .news-letter p {
+    font-size: 1rem;
+  }
+}
+
+/* end Specification */
+
+/* Comments  */
+.score {
+  min-height: 100%;
+  background-image: radial-gradient(
+      78.66% 177.87% at 19.56% 37.57%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0) 19.22%,
+      #080a0b 99.74%
+    ),
+    url(/public/assets/top-score-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+}
+
+.score-left {
+  color: white;
+}
+
+.card {
+  background-color: #1d1e1e;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 400px;
+  height: 200px;
+  padding-right: 5%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card-1 {
+  margin-top: 1rem;
+}
+
+.card-text-name h3 {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #fbb341;
+}
+
+.card-text-content {
+  margin-top: 4px;
+  color: #ffffff;
+}
+
+.card-text-tittle {
+  color: #c9c9c9;
+  margin-bottom: 3px;
+}
+
+/* end Comments  */
+
+/* Footer and Bottom Navbar  */
+
+.skull-pic img {
+  position: absolute;
+  width: 65%;
+  background-color: radial-gradient(
+    45.54% 53.19% at 50% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba (0, 0, 0, 0) 46.15%,
+    #080a0b 99.74%
+  );
+  transform: matrix3d(-1, 0, 0, 1, 0, 0);
+}
+
+.footer {
+  width: 100%;
+  padding-top: 5%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-letter h2 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 20vw;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: #ffffff !important;
+}
+
+.news-letter h1 {
+  font-size: 65px;
+  font-family: "Bebas Neue", Helvetica, sans-serif;
+  max-width: 20vw;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  line-height: 70px;
+  padding-bottom: 3%;
+  color: #ffffff !important;
+}
+
+.news-letter p {
+  font-size: 18px;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 20px;
+  padding-bottom: 15%;
+  color: #ffffff !important;
+}
+
+.email {
+  color: #fbb341 !important;
+}
+
+.button-1 {
+  font-size: 6rem;
+}
+
+.nav-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-footer {
+  color: #ffffff !important;
+}
+
+.bottom {
+  margin-top: -3%;
+}
+
+/* end footer adn Bottom Navbar  */
+
+/* Media Querry */
+
+@media (max-width: 991px) {
+  .spec {
+    background-image: url(/public/assets/requirements.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 50%;
+    min-height: 100vh;
+    box-shadow: inset 250px 10px 100px 10px black;
+  }
+
+  .spec-info-top {
+    font-size: 1rem;
+  }
+
+  .spec-req {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .news-letter h2 {
+    font-size: 2rem;
+  }
+
+  .news-letter h1 {
+    font-size: 1.5rem;
+  }
+
+  .news-letter p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,462 @@
+#bodyPage {
+  background-color: #9c835f;
+  overflow-y: hidden;
+}
+
+#mainPage {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.LogoBackButton img {
+  margin-top: 47px;
+  text-decoration: none;
+  color: #724c21;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.gameTitle {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 37px;
+  margin-top: 12px;
+}
+
+#LogoGameSuit {
+  height: 65px;
+  width: 65px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#GamePlayTitle {
+  color: #f9b23d;
+  align-self: center;
+  font-weight: 700;
+  font-size: 45px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.matchGame {
+  display: flex;
+  align-items: row;
+  padding-top: 3vh;
+}
+
+.Player1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.Computer {
+  display: flex;
+  flex-direction: column;
+}
+
+.P1Title {
+  align-self: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.ComTitle {
+  align-self: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.gameOptionP1 {
+  height: 175px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.gameOptionP1:hover {
+  background-color: #c4c4c4;
+}
+
+.gameOptionCom {
+  height: 175px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.gameOptionCom:hover {
+  background-color: #c4c4c4;
+}
+
+.optionP1 {
+  width: 100px;
+}
+
+.optionComputer {
+  width: 100px;
+}
+
+.PlayStatus {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+#TextVersus {
+  align-self: center;
+  color: #bd0000;
+  font-size: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+#P1Win {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 38px;
+  color: white;
+  font-weight: 700;
+  width: 251px;
+  height: 146px;
+  background: #4c9654;
+  border-radius: 10px;
+  transform: rotate(-15deg);
+  display: none;
+}
+
+#ComWin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 38px;
+  color: white;
+  font-weight: 700;
+  width: 251px;
+  height: 146px;
+  background: #4c8296;
+  border-radius: 10px;
+  transform: rotate(-15deg);
+  display: none;
+}
+
+#Draw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 38px;
+  color: white;
+  font-weight: 700;
+  width: 251px;
+  height: 146px;
+  background: #035b0c;
+  border-radius: 10px;
+  transform: rotate(-15deg);
+  display: none;
+}
+
+.refreshBtn {
+  width: 40px;
+  height: 40px;
+}
+
+.BtnRefresh {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+
+  color: #ffffff;
+}
+
+.refreshImg {
+  width: 50px;
+}
+
+#rowBP {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+#rowBP .kolom1 {
+  margin-left: 0;
+  width: 100;
+}
+
+#rowBP .kolom2 {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Querry */
+
+@media screen and (max-width: 720px) {
+  .gameOptionP1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .optionP1 {
+    width: 50px;
+  }
+
+  .optionComputer {
+    width: 50px;
+  }
+
+  .gameOptionCom {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  #P1Win {
+    font-size: 19px;
+    font-weight: 600;
+    width: 125px;
+    height: 73px;
+    border-radius: 5px;
+  }
+
+  #ComWin {
+    font-size: 19px;
+    font-weight: 600;
+    width: 125px;
+    height: 73px;
+    border-radius: 5px;
+  }
+
+  #Draw {
+    font-size: 19px;
+    font-weight: 600;
+    width: 125px;
+    height: 73px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 499px) {
+  .gameTitle {
+    margin-top: 8%;
+    margin-bottom: 15%;
+  }
+
+  .LogoBackButton {
+    width: 70%;
+  }
+
+  .LogoBackButton:hover {
+    width: 80%;
+  }
+
+  #LogoGameSuit img {
+    width: 100%;
+  }
+
+  #LogoGameSuit {
+    width: 15%;
+    padding-right: 4%;
+  }
+
+  #GamePlayTitle {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 500px) {
+  .LogoBackButton {
+    width: 8%;
+  }
+
+  #LogoGameSuit {
+    width: 8%;
+  }
+
+  #GamePlayTitle {
+    font-size: 1.5rem;
+  }
+
+  .gameTitle {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 399px) {
+  #TextVersus {
+    font-size: 150%;
+  }
+
+  .optionP1 img {
+    width: 190%;
+  }
+
+  .optionP1 button {
+    margin-top: 15%;
+    margin-right: 9%;
+    padding-right: 30%;
+  }
+
+  .optionComputer button {
+    margin-bottom: 36%;
+    margin-top: 15%;
+    margin-left: 7%;
+    padding-right: 28%;
+  }
+
+  .optionComputer img {
+    width: 150%;
+  }
+
+  .refreshImg img {
+    width: 120%;
+  }
+
+  .refreshBtn {
+    top: 550px;
+    transform: translateX(30px);
+  }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+  #TextVersus {
+    font-size: 230%;
+  }
+
+  .optionP1 img {
+    width: 60%;
+  }
+
+  .optionComputer img {
+    width: 66%;
+  }
+
+  .optionComputer button {
+    margin-bottom: 14%;
+  }
+
+  .refreshImg img {
+    width: 50%;
+  }
+
+  .refreshBtn {
+    top: 480px;
+    transform: translateX(40px);
+  }
+}
+
+@media (max-width: 767px) and (min-width: 700px) {
+  #TextVersus {
+    font-size: 150%;
+  }
+
+  .optionP1 img {
+    width: 80%;
+  }
+
+  .optionP1 button {
+    margin-bottom: 18%;
+    margin-top: 5%;
+  }
+
+  .optionComputer img {
+    width: 82%;
+  }
+
+  .optionComputer button {
+    margin-bottom: 22%;
+    margin-top: 5%;
+  }
+
+  .refreshBtn {
+    top: 530px;
+    transform: translateX(8px);
+  }
+}
+
+@media (max-width: 699px) and (min-width: 500px) {
+  #TextVersus {
+    font-size: 150%;
+  }
+
+  .optionP1 img {
+    width: 85%;
+  }
+
+  .optionComputer img {
+    width: 87%;
+  }
+
+  .optionComputer button {
+    margin-bottom: 22%;
+  }
+
+  .refreshBtn {
+    top: 480px;
+    transform: translateX(15px);
+  }
+
+  .refreshImg img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+  .versusBox .versus .active-text-win {
+    font-size: 150%;
+  }
+
+  .optionComputer button {
+    margin-bottom: 38%;
+  }
+
+  .optionP1 img {
+    width: 105%;
+  }
+
+  .optionComputer img {
+    width: 100%;
+  }
+
+  .refreshBtn {
+    top: 470px;
+    transform: translateX(35px);
+  }
+
+  .refreshImg img {
+    width: 100%;
+  }
+}
+
+/* End Media Querry  */
